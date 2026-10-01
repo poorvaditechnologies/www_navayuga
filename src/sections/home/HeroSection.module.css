@@ -1,0 +1,28 @@
+.hero {
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  background:
+    radial-gradient(800px 400px at 50% 0%, var(--color-primary-soft), transparent 70%),
+    var(--color-bg);
+}
+
+.title {
+  font-size: clamp(2.5rem, 7vw, 4.5rem);
+  line-height: 1.1;
+  margin: 0 0 var(--space-4);
+}
+
+.tagline {
+  font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+  color: var(--color-text-muted);
+  margin: 0 0 var(--space-6);
+}
+
+.actions {
+  display: flex;
+  gap: var(--space-3);
+  justify-content: center;
+  flex-wrap: wrap;
+}
