@@ -1,15 +1,25 @@
-import { Button, Container } from '@/components/ui';
+import { Button, Container, PageHeader } from '@/components/ui';
+import { useT } from '@/i18n';
 
-export function NotFoundPage() {
+interface NotFoundPageProps {
+  title?: string;
+  message?: string;
+}
+
+export function NotFoundPage({ title, message }: NotFoundPageProps) {
+  const t = useT();
   return (
-    <section
-      style={{ minHeight: '70vh', display: 'grid', placeItems: 'center', textAlign: 'center' }}
-    >
-      <Container>
-        <h1>404</h1>
-        <p>This page doesn&apos;t exist.</p>
-        <Button href="/">Back home</Button>
-      </Container>
-    </section>
+    <>
+      <PageHeader
+        title={title ?? t.notFound.title}
+        description={message ?? t.notFound.message}
+        crumb="404"
+      />
+      <section style={{ padding: '4rem 0 6rem' }}>
+        <Container>
+          <Button to="/">{t.common.backHome}</Button>
+        </Container>
+      </section>
+    </>
   );
 }

@@ -1,0 +1,44 @@
+.band {
+  overflow: hidden;
+  background: var(--color-accent);
+  color: #241a00;
+  padding-block: 1rem;
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+
+.track {
+  display: flex;
+  width: max-content;
+  gap: 2.5rem;
+  animation: scroll 40s linear infinite;
+}
+
+.band:hover .track {
+  animation-play-state: paused;
+}
+
+.item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.icon {
+  opacity: 0.6;
+}
+
+@keyframes scroll {
+  to {
+    transform: translateX(calc(-50% - 1.25rem));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .track {
+    animation: none;
+  }
+}

@@ -1,2 +1,10 @@
 export { AboutSection } from './AboutSection';
+export { FocusMarquee } from './FocusMarquee';
+export { StatementBand } from './StatementBand';
 export { HeroSection } from './HeroSection';
+export { ProgramsSection } from './ProgramsSection';
+export { MissionSection } from './MissionSection';
+export { TestimonialsSection } from './TestimonialsSection';
+export { TeamSection } from './TeamSection';
+export { GetInvolvedSection } from './GetInvolvedSection';
+export { JoinSection } from './JoinSection';

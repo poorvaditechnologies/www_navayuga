@@ -1,16 +1,24 @@
 /* Design tokens. Change brand colours, spacing and typography here only. */
 :root {
   /* Colours */
-  --color-primary: #2563eb;
-  --color-primary-soft: rgb(37 99 235 / 0.15);
+  --color-primary: #15803d;
+  --color-primary-dark: #0f5c2c;
+  --color-primary-soft: rgb(21 128 61 / 0.12);
+  --color-accent: #f0b429;
+  --color-accent-soft: rgb(240 180 41 / 0.18);
   --color-on-primary: #ffffff;
   --color-bg: #ffffff;
-  --color-surface: #f4f5f7;
-  --color-text: #0f172a;
-  --color-text-muted: #475569;
+  --color-surface: #f6f7f4;
+  --color-surface-alt: #eef3ea;
+  --color-text: #15241c;
+  --color-text-muted: #51635a;
+  --color-border: #e3e8e1;
 
   /* Typography */
-  --font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-sans:
+    'Plus Jakarta Sans', 'Noto Sans Kannada', system-ui, -apple-system, 'Segoe UI', Roboto,
+    sans-serif;
+  --font-display: 'Fraunces', 'Noto Serif Kannada', Georgia, serif;
 
   /* Spacing scale (0.25rem steps) */
   --space-1: 0.25rem;
@@ -24,8 +32,12 @@
   /* Layout */
   --container-width: 1200px;
   --radius-sm: 6px;
+  --radius-md: 14px;
+  --radius-lg: 24px;
   --radius-full: 999px;
   --shadow-sm: 0 1px 8px rgb(15 23 42 / 0.08);
+  --shadow-md: 0 12px 32px rgb(15 36 28 / 0.1);
+  --shadow-lg: 0 24px 60px rgb(15 36 28 / 0.14);
 
   /* Motion */
   --transition-fast: 150ms ease;

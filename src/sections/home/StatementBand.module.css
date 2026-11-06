@@ -1,0 +1,63 @@
+.band {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 80svh;
+  padding: var(--space-12) var(--space-4);
+  overflow: hidden;
+  isolation: isolate;
+  color: #fff;
+  text-align: center;
+}
+
+.imageLayer {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  will-change: transform;
+}
+
+.imageLayer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(ellipse at center, rgb(8 22 14 / 0.45), rgb(8 22 14 / 0.85)), rgb(8 22 14 / 0.2);
+}
+
+.content {
+  max-width: 980px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-6);
+}
+
+.line {
+  display: block;
+  width: 80px;
+  height: 3px;
+  border-radius: 3px;
+  background: var(--color-accent);
+}
+
+.quote {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(2.4rem, 1.4rem + 5vw, 6rem);
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+}
+
+.sub {
+  margin: 0;
+  font-size: clamp(1rem, 0.9rem + 0.4vw, 1.25rem);
+  color: rgb(255 255 255 / 0.8);
+}

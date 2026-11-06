@@ -1,0 +1,43 @@
+.switch {
+  display: inline-flex;
+  padding: 3px;
+  border-radius: var(--radius-full);
+  border: 1px solid color-mix(in srgb, currentColor 25%, transparent);
+}
+
+.option {
+  position: relative;
+  min-width: 44px;
+  padding: 0.38rem 0.7rem;
+  border: none;
+  border-radius: var(--radius-full);
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1.2;
+  cursor: pointer;
+  opacity: 0.75;
+  transition: opacity var(--transition-fast);
+}
+
+.option:hover,
+.option[aria-pressed='true'] {
+  opacity: 1;
+}
+
+.option[aria-pressed='true'] {
+  color: #241a00;
+}
+
+.pill {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: var(--color-accent);
+}
+
+.label {
+  position: relative;
+}

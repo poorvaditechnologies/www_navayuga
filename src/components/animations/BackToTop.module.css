@@ -1,0 +1,16 @@
+.button {
+  position: fixed;
+  right: calc(1.25rem + 6px);
+  bottom: calc(1.25rem + 76px);
+  z-index: 40;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: var(--radius-full);
+  background: var(--color-primary);
+  color: #fff;
+  box-shadow: var(--shadow-md);
+  cursor: pointer;
+}
